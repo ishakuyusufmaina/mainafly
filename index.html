@@ -1,30 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to mainafly.com</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mainafly provides affordable digital solutions to businesses and schools. Maximize profits, reduce costs, and automate your systems with Mainafly's smart services.">
+    <meta name="author" content="Ishaku Yusuf Maina">
+    <title>Mainafly | Digital Solutions for Smart Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d47a1;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #90caf9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .intro {
+            background: #e3f2fd;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            margin-bottom: 1rem;
+            color: #0d47a1;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service h3 {
+            margin-bottom: 1rem;
+            color: #0d47a1;
+        }
+
+        .contact {
+            background: #0d47a1;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0a3570;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .intro h2 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 min-h-screen flex items-center justify-center text-white p-6">
-  <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl p-10 max-w-3xl text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">
-      Welcome to <span class="text-yellow-300">mainafly.com</span>
-    </h1>
-    <p class="text-lg md:text-xl mb-6">
-      We're getting ready to take off! This space will soon be home to something exciting.
-    </p>
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#" class="bg-yellow-300 text-black px-6 py-2 rounded-xl shadow-lg hover:bg-yellow-400 transition duration-300">
-        Stay Tuned
-      </a>
-      <a href="mailto:contact@mainafly.com" class="border border-white px-6 py-2 rounded-xl hover:bg-white hover:text-black transition duration-300">
-        Contact Us
-      </a>
+<body>
+    <header>
+        <h1>Mainafly</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Smart Digital Solutions for Your Business and School</h2>
+            <p>At Mainafly, we help businesses and schools maximize profits, reduce spending, and look smarter with affordable, centralized, and modern digital services. Request a free demo today!</p>
+        </section>
+
+        <section class="services" id="services">
+            <div class="service">
+                <h3>Business Solutions</h3>
+                <p>Optimize your operations, cut costs, and maximize profits with our smart digital services.</p>
+            </div>
+            <div class="service">
+                <h3>School Solutions</h3>
+                <p>Automate terminal report generation, compute results, and install programming software in your school computer labs.</p>
+            </div>
+            <div class="service">
+                <h3>Affordable Pricing</h3>
+                <p>Get professional solutions without breaking the bank. Our services are affordable and effective.</p>
+            </div>
+            <div class="service">
+                <h3>Request a Demo</h3>
+                <p>Contact us via WhatsApp or Email to schedule a free demonstration tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/2349045060362" style="color: #90caf9;">09045060362</a></p>
+            <p><strong>Email:</strong> <a href="mailto:contact@mainafly.com" style="color: #90caf9;">contact@mainafly.com</a></p>
+        </section>
     </div>
-    <p class="mt-10 text-sm text-gray-200">
-      © <script>document.write(new Date().getFullYear())</script> mainafly.com. All rights reserved.
-    </p>
-  </div>
+
+    <footer class="footer">
+        &copy; 2025 Mainafly | Built with passion by Ishaku Yusuf Maina
+    </footer>
 </body>
 </html>
