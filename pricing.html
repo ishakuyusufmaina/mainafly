@@ -1,1 +1,215 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SIB Pricing</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+        color: #333;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px 30px;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 12px;
+        color: #1a1a1a;
+    }
+
+    header p {
+        font-size: 1.1rem;
+        color: #444;
+    }
+
+    .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 30px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .plan {
+        background: #fff;
+        border-radius: 16px;
+        padding: 30px 25px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+        border-top: 8px solid transparent;
+        transition: 0.35s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Plan header gradient ribbons */
+    .plan::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 8px;
+    }
+
+    .basic::before { background: linear-gradient(90deg, #2b78e4, #6fa8dc); }
+    .standard::before { background: linear-gradient(90deg, #e69138, #f6b26b); }
+    .premium::before { background: linear-gradient(90deg, #ffd966, #f1c232); }
+    .enterprise::before { background: linear-gradient(90deg, #cc0000, #ff5c5c); }
+
+    .plan:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+    }
+
+    .plan h2 {
+        margin-top: 5px;
+        font-size: 1.7rem;
+        color: #111;
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 15px 0;
+        color: #000;
+    }
+
+    ul {
+        padding-left: 18px;
+        margin-bottom: 25px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        font-size: 0.97rem;
+    }
+
+    /* Colorful buttons */
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: 0.3s;
+        color: #fff;
+    }
+
+    .basic .btn { background: linear-gradient(90deg, #2b78e4, #6fa8dc); }
+    .standard .btn { background: linear-gradient(90deg, #e69138, #f6b26b); }
+    .premium .btn { background: linear-gradient(90deg, #ffd966, #f1c232); color:#333; font-weight:700;}
+    .enterprise .btn { background: linear-gradient(90deg, #cc0000, #ff5c5c); }
+
+    .btn:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>SIB Pricing</h1>
+    <p>Choose the plan that fits your school perfectly.</p>
+</header>
+
+<div class="pricing-container">
+
+    <!-- BASIC -->
+    <div class="plan basic">
+        <h2>Basic</h2>
+        <div class="price">₦25,000 (One-Time)</div>
+        <ul>
+            <li>✓ Teach & Sign</li>
+            <li>✓ Student Attendance</li>
+            <li>✓ Report Cards</li>
+            <li>✓ Scoresheet (basic)</li>
+            <li>✓ Manage Teachers & Students</li>
+            <li>✓ Manage Admins & Roles</li>
+            <li>✓ Manage Subjects & Sections</li>
+            <li>✓ Launch Academic Session</li>
+            <li>✖ No School Fees</li>
+            <li>✖ No Configurations</li>
+            <li>✖ No Cloud Billing</li>
+            <li>✖ No CBT</li>
+            <li>✖ No Multi-Campus</li>
+        </ul>
+
+        <a 
+        href="https://api.whatsapp.com/send?phone=2349045060362&text=Hi,%20I%20need%20the%20Basic%20version%20for%20my%20school." 
+        class="btn">Get Basic</a>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="plan standard">
+        <h2>Standard</h2>
+        <div class="price">₦200 / New Student</div>
+        <ul>
+            <li>✓ All Basic Features</li>
+            <li>✓ School Fees Management</li>
+            <li>✓ Fees Defaulters</li>
+            <li>✓ Cloud Billing</li>
+            <li>✓ Configure Scoresheet</li>
+            <li>✓ Configure Report Card</li>
+            <li>✓ Psychometrics</li>
+            <li>✓ Assign Form Master</li>
+            <li>✖ No Multi-Campus</li>
+            <li>✖ No CBT</li>
+            <li>✖ No Customization</li>
+        </ul>
+
+        <a 
+        href="https://api.whatsapp.com/send?phone=2349045060362&text=Hi,%20I%20need%20the%20Standard%20version%20for%20my%20school." 
+        class="btn">Upgrade to Standard</a>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="plan premium">
+        <h2>Premium</h2>
+        <div class="price">₦200 / Student / Term</div>
+        <ul>
+            <li>✓ All Standard Features</li>
+            <li>✓ Multi-Campus Support</li>
+            <li>✓ CBT (Computer-Based Testing)</li>
+            <li>✖ Custom Requests</li>
+            <li>✖ White-Labeling</li>
+        </ul>
+
+        <a 
+        href="https://api.whatsapp.com/send?phone=2349045060362&text=Hi,%20I%20need%20the%20Premium%20version%20for%20my%20school." 
+        class="btn">Choose Premium</a>
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="plan enterprise">
+        <h2>Enterprise</h2>
+        <div class="price">Contact for Pricing</div>
+        <ul>
+            <li>✓ All Premium Features</li>
+            <li>✓ Custom Feature Requests</li>
+            <li>✓ Custom Integrations</li>
+            <li>✓ Full System Customization</li>
+            <li>✓ Dedicated Account Manager</li>
+            <li>✓ White-Label Option</li>
+            <li>✓ Unlimited Campuses</li>
+        </ul>
+
+        <a 
+        href="https://api.whatsapp.com/send?phone=2349045060362&text=Hi,%20I%20want%20the%20Enterprise%20plan%20for%20my%20school." 
+        class="btn">Contact Sales</a>
+    </div>
+
+</div>
+
+</body>
+</html>
